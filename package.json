@@ -1,31 +1,39 @@
 {
   "name": "blooders",
   "version": "1.0.0",
-  "description": "Prueba técnica blooders",
+  "description": "",
   "main": "index.js",
-  "dependencies": {
-    "start-react-app": "^0.1.9",
-    "webpack": "^4.20.2",
-    "webpack-command": "^0.4.1",
-    "webpack-dev-server": "^3.1.9"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "nodemon server/config.js",
+    "react-dev": "webpack -d --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fatimaavilesfa/blooders.git"
+    "url": "git+https://github.com/fatimaavilesfa/blooders"
   },
   "author": "Fatima Aviles",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fatimaavilesfa/blooders/issues"
   },
-  "homepage": "https://github.com/fatimaavilesfa/blooders#readme"
+  "homepage": "https://github.com/fatimaavilesfa/blooders#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "nodemon": "^1.17.5",
+    "webpack": "^4.15.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jquery": "^3.3.1",
+    "mysql": "^2.15.0",
+    "react": "^16.4.1",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.1"
+  }
 }
